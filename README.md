@@ -12,10 +12,11 @@ Overlay Tools (ex: delete branches etc...)
 // branches that you don't want to delete
 var white_list = ["master", "develop", "devops"]
    
-$('body').prepend('<div style="position:fixed;z-index:9999;'+
-                  'background:orange;float:left;" class="back-to-top">'+
-                  '<button style="background:orange;" id="remove_branches">'+
-                  'Remove Branches</button></div>');
+$('body').prepend('<div style="position:fixed;z-index:9999;float:left;" class="back-to-top">'+
+                  ' <button style="background:orange;" id="remove_branches">'+
+                  '   Remove Branches'+
+                  ' </button>'+
+                  '</div>');
 
 $('#remove_branches').click(remove_branches);
         
@@ -31,6 +32,10 @@ function remove_branches(){
         }, index*300)
     }) 
 }
+
+
+
+
 
 
 ```
