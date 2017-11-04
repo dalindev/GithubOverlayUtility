@@ -12,7 +12,7 @@ Overlay Tools (ex: delete branches etc...)
 // branches that you don't want to delete
 var white_list = ["master", "develop", "devops"]
    
-$('body').prepend('<div style="position:fixed;z-index:9999;float:left;" class="back-to-top">'+
+$('body').prepend('<div style="position:fixed;z-index:9999;float:left;">'+
                   ' <button style="background:orange;" id="remove_branches">'+
                   '   Remove Branches'+
                   ' </button>'+
